@@ -1,0 +1,175 @@
+#page-dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside.dashboard-sidebar {
+    position: fixed;
+    height: 100%;
+    padding: 32px 24px;
+    background: linear-gradient(329.54deg, #15B6D6 0%, #15D6D6 100%);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  aside.dashboard-sidebar img {
+    width: 48px;
+  }
+
+  .dashboard-sidebar div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+  }
+  
+  aside.dashboard-sidebar div a,
+  aside.dashboard-sidebar div button {
+    width: 48px;
+    height: 48px;
+  
+    border: 0;
+  
+    border-radius: 16px;
+  
+    cursor: pointer;
+  
+    transition: background-color 0.2s;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+  }
+  
+aside.dashboard-sidebar .div-icon-position {
+    margin-bottom: 16px;
+}
+
+aside.dashboard-sidebar .div-icon-position button {
+      background: #FFD666;
+      /* #ff66bf */
+}
+
+aside.dashboard-sidebar .div-icon-position button:hover {
+    background: #fcff3a;
+}
+
+aside.dashboard-sidebar .div-pendent-logout button {
+    background: #12AFCB;
+}
+
+aside.dashboard-sidebar .div-pendent-logout button:hover {
+    background: #17D6EB;
+}
+
+#page-dashboard main {
+    margin-left: 96px;
+    flex: 1;
+}
+
+.page-dashboard {
+    margin: 64px auto;
+    width: 1120px;
+
+    display: grid;
+    grid-template-areas:"title title"
+                        "orp-1 orp-2"
+                        "orp-3 orp-4";
+
+    column-gap: 32px;
+    row-gap: 36px;
+
+    
+}
+
+
+.page-dashboard .div-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    width: 1120px;
+
+    grid-area: title;
+
+    padding-bottom: 32px;
+    border-bottom: solid 1px #D3E2E5;
+}
+
+.page-dashboard .div-title strong{
+    color: #4D6F80;
+    font-size: 32px;
+    line-height: 34px;
+}
+
+.page-dashboard .div-title h1{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8FA7B2;
+}
+
+.page-dashboard .div-orphanage-1 {
+    width: 540px;
+    border-radius: 20px;
+    grid-area: orp-1;
+}
+
+.page-dashboard .div-orphanage-2 {
+    width: 540px;
+    grid-area: orp-2;
+}
+
+
+
+.page-dashboard footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    background: #FFF;
+    padding: 16px 24px;
+}
+
+.page-dashboard footer strong{
+    color: #4D6F80;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.page-dashboard footer div{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.page-dashboard footer .link-button {
+    width: 48px;
+    height: 48px;
+  
+    border: 0;  
+    border-radius: 16px;
+
+    cursor: pointer;
+  
+    background: #EBF2F5;
+    transition: all 0.2s;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+    margin-left: 12px;
+}
+
+.page-dashboard footer .link-button:hover {
+    background: #e2e8eb;
+}
