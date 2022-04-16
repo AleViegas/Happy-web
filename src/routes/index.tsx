@@ -8,6 +8,7 @@ import AuthRoutes from './auth.routes'
 
 export default function Routes() {
     const { signed } = useContext(AuthContext)
+    
 
     if (signed) {
         return (

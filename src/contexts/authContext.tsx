@@ -4,6 +4,8 @@
 import React, { createContext, useEffect, useState } from 'react'
 import api from '../services/api';
 
+import mapMarkerImg from '../images/map-marker.svg';
+
 import * as auth from '../services/auth'
 
 interface AuthContextData {
@@ -23,7 +25,7 @@ export const AuthProvider: React.FC = ({ children }) => {
         const response = await auth.SignIn()
         // autenticação atraves da api auth
 
-        // api.defaults.headers["Authorization"] = `Bearer ${response.token}`
+        api.defaults.headers["Authorization"] = `Bearer ${response.token}`
         // token em todas as proximas requests
 
         setUser(response.user)
@@ -52,13 +54,13 @@ export const AuthProvider: React.FC = ({ children }) => {
         localStorage.clear()
     }
 
-    // if (loading) {
-    //     // fazer a sidebar como component para ja monstrar ela, ou pga de reload mesmo
-    //     // tem o onboarding, animação de primeira entrada - pode conflitar com isso caso mude o loading para o app
-    //     return (
-    //         <h1 style={{fontSize: 36, color:"black" }} >Carregando</h1>
-    //     )
-    // }
+    if (loading) {
+        // fazer a sidebar como component para ja monstrar ela, ou pga de reload mesmo
+        // tem o onboarding, animação de primeira entrada - pode conflitar com isso caso mude o loading para o app
+        return (
+            <img src={mapMarkerImg} alt="Happy" style={{position:'sticky',top:"50%",left:"50%"}} />
+        )
+    }
 
     return(
         <AuthContext.Provider value={{ signed: !!user, user, signIn, signOut }}>

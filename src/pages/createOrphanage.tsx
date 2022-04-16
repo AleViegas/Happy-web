@@ -58,7 +58,7 @@ export default function CreateOrphanage() {
 
     alert("Cadastro realizado com sucesso")
 
-    history.push("/app")
+    history.push("/success")
   }  
 
   function handleSelectImages(event: ChangeEvent<HTMLInputElement>) {
@@ -102,7 +102,7 @@ export default function CreateOrphanage() {
 
               center={[-23.6101604,-46.765787]} 
               style={{ width: '100%', height: 280 }}
-              zoom={15}
+              zoom={14}
               onClick={handleMapClick}
             >
               <TileLayer 
