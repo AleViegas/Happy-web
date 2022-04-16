@@ -57,7 +57,7 @@ export default function Dashboard() {
                     <div className="div-orphanage-1">
 
                         <Map 
-                            center={[-23.6101604,-46.765787]} 
+                            center={[-23.6401604,-46.725787]} 
                             style={{ width: '100%', height: 280 }}
                             zoom={15}
                             >
@@ -74,9 +74,9 @@ export default function Dashboard() {
                         </Map>
 
                         <footer>
-                            <strong>nome 1</strong>
+                            <strong>Orfanato 1</strong>
                             <div>
-                                <Link to="" className="link-button" >
+                                <Link to="/adm/dashboard" className="link-button" >
                                     <FiEdit3 size={24} color="#15C3D6" />
                                 </Link>
                                 <Link to="/adm/deleteOrphanage" className="link-button" >
@@ -106,9 +106,9 @@ export default function Dashboard() {
                         </Map>
 
                         <footer>
-                            <strong>nome 2</strong>
+                            <strong>Orfanato 2</strong>
                             <div>
-                                <Link to="" className="link-button" >
+                                <Link to="/adm/dashboard" className="link-button" >
                                     <FiEdit3 size={24} color="#15C3D6" />
                                 </Link>
                                 <Link to="/adm/deleteOrphanage" className="link-button" >

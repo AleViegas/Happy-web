@@ -20,7 +20,9 @@ export default function Routes() {
     }
         else {
             return(
+                // AuthRoutes deve ser retirado caso o app realmente tenha login
                 <AuthProvider>
+                    <AuthRoutes />
                     <AppRoutes />
                 </AuthProvider>
             )

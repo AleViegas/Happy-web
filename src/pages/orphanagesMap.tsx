@@ -41,7 +41,7 @@ function OrphanagesMap() {
                     <img src={mapMarkerImg} alt="Happy"/>
 
                     <h2>Escolha um orfanato no mapa</h2>
-                    <p>Muitas crianças estâo esperando sua visita :)</p>
+                    <p>Muitas crianças estão esperando sua visita :)</p>
                 </header>
 
                 <footer>
@@ -53,7 +53,7 @@ function OrphanagesMap() {
             <Map 
 
                 center={[-23.6002527,-46.7575315]}
-                zoom={14}
+                zoom={12}
                 style={{ width:'100%', height: '100%' }}
             >
              {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png" /> */}

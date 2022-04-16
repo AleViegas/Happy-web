@@ -11,7 +11,7 @@ export default function DeleteOrphanage() {
                 <div className="container-text">
                     <strong>Excluir!</strong>
                     <span> Você tem certeza que quer excluir o Orfanato dale </span>
-                    <Link to="" className="back-button">
+                    <Link to="/app" className="back-button">
                         Voltar para o mapa
                     </Link>
                 </div>
