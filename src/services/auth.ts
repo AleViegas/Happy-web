@@ -20,6 +20,6 @@ export function SignIn(): Promise<Response> {
                     password: "senha"
                 }
             })
-        }, 100);
+        }, 1);
     })
 }
