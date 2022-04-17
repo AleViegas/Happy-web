@@ -10,13 +10,16 @@ interface Response {
     }
 }
 
-export function SignIn(): Response {
-    return (
-            {
+export function SignIn(): Promise<Response> {
+    return new Promise(resolve =>{
+        setTimeout(() => {
+            resolve({
                 token: "asdjkdvasidioavsbdnjb",
                 user: {
                     email: "email@hotmail.com",
                     password: "senha"
-            }}
-    )
+                }
+            })
+        }, 100);
+    })
 }
