@@ -184,15 +184,15 @@
         left: 50%;
         top: 60%;
         transform: translate(-50%, -60%);
+        width: fit-content;
+        font-size: 30px;
     }
 
     #page-landing .content-wrapper img {
-        position: fixed;
+        position: absolute;
+        top: 42%;
         left: 50%;
-        top: 60%;
-        transform: translate(-50%, -60%);
-        font-size: 30px;
-        width: fit-content;
+        transform: translate(-50%, -42%);
     }
 
   }

@@ -103,7 +103,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1366px) {
     #page-map aside {
         padding: 60px;
     }
@@ -132,5 +132,12 @@
         font-weight: 800;
         line-height: 40px;
         margin-top: 64px;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    #page-map aside {
+        display: none;
     }
 }
