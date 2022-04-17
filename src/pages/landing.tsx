@@ -29,6 +29,7 @@ function Landing() {
                 <Link to="/app" className="enter-app">
                     <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
                 </Link>
+                <h1 className='warning'>Entre pelo desktop</h1>
             </div>
         </div>
     )

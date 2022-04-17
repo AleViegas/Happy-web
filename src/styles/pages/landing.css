@@ -18,6 +18,8 @@
     height: 100%;
     max-height: 680px;
 
+    padding: 0 12px;
+
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -25,6 +27,10 @@
 
     background: url('../../images/landing.svg') no-repeat 80% center;
 
+}
+
+#page-landing .content-wrapper .warning {
+    display: none;
 }
 
 #page-landing .content-wrapper main h1 {
@@ -61,7 +67,7 @@
 
 .content-wrapper .enter-adm {
     position: absolute;
-    right: 0;
+    right: 12px;
     top: 0;
 
     width: 222px;
@@ -90,7 +96,7 @@
 
 .content-wrapper .enter-app {
     position: absolute;
-    right: 0;
+    right: 12px;
     bottom: 0;
 
     width: 80px;
@@ -109,3 +115,69 @@
 .content-wrapper .enter-app:hover {
     background: #96feff;
 }
+
+@media screen and (max-width: 1024px) {
+    .content-wrapper .location {
+        display: none;
+    }
+
+    #page-landing .content-wrapper main {
+        max-width: 220px;
+    }
+
+    #page-landing .content-wrapper main h1 {
+        max-width: 350px;
+        font-size: 56px;
+        font-weight: 900;
+        line-height: 60px;
+    }
+
+    #page-landing .content-wrapper main p {
+        margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .content-wrapper .location {
+        display: none;
+    }
+
+    #page-landing .content-wrapper main {
+        max-width: 200px;
+    }
+
+    #page-landing .content-wrapper main h1 {
+        max-width: 350px;
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 45px;
+    }
+
+    #page-landing .content-wrapper main p {
+        margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .content-wrapper .location {
+        display: none;
+    }
+
+    #page-landing .content-wrapper main {
+        display: none;
+    }
+
+    #page-landing .content-wrapper .enter-adm {
+        display: none;
+    }
+
+    #page-landing .content-wrapper .enter-app {
+        display: none;
+    }
+    
+    #page-landing .content-wrapper .warning {
+        padding-top: 40px;
+        display: block;
+    }
+
+  }
