@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import { FiArrowLeft } from 'react-icons/fi'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import mapMarkerImg from '../../images/map-marker.svg'
 
@@ -19,7 +19,9 @@ export default function RecoveryAccount() {
             <div className="content-wrapper">
                     
                 <div className="container-landing">
-                        <img src={mapMarkerImg} alt="Happy"/>
+                        <Link to={"/"}>
+                            <img src={mapMarkerImg} alt="Happy" />
+                        </Link>                        
                         <h1>happy</h1>
                         <strong>Taboão da Serra</strong>
                         <span>São Paulo</span>
@@ -42,7 +44,7 @@ export default function RecoveryAccount() {
                         <label htmlFor="password">Repetir senha</label>
                         <input type="password" name="" />
 
-                        <button>Entrar</button>
+                        <button>Alterar senha</button>
                     </form>
 
                 </aside>

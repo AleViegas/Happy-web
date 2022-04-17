@@ -29,7 +29,9 @@ export default function Dashboard() {
         <div id="page-dashboard">
             <aside className="dashboard-sidebar">
                 <div className="div-icon-position">
-                    <img src={mapMarkerImg} alt="Happy" />
+                    <Link to={"/"}>
+                        <img src={mapMarkerImg} alt="Happy" />
+                    </Link>
                     <button type="button" onClick={handleNothing}>
                         <FiMapPin size={24} color="#FFF" />
                     </button>

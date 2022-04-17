@@ -12,8 +12,6 @@ export default function AdmLogin() {
 
     const { signed, signIn } = useContext(AuthContext)
 
-    // console.log(signed)
-
     function handleSignIn() {
         signIn()
     }
@@ -25,7 +23,9 @@ export default function AdmLogin() {
             <div className="content-wrapper">
                     
                 <div className="container-landing">
-                        <img src={mapMarkerImg} alt="Happy"/>
+                        <Link to={"/"}>
+                            <img src={mapMarkerImg} alt="Happy" />
+                        </Link>
                         <h1>happy</h1>
                         <strong>Taboão da Serra</strong>
                         <span>São Paulo</span>

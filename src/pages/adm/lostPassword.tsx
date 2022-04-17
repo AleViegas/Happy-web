@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiArrowLeft } from 'react-icons/fi'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import mapMarkerImg from '../../images/map-marker.svg'
 
@@ -18,7 +18,9 @@ export default function LostPassword() {
             <div className="content-wrapper">
                     
                 <div className="container-landing">
-                        <img src={mapMarkerImg} alt="Happy"/>
+                        <Link to={"/"}>
+                            <img src={mapMarkerImg} alt="Happy" />
+                        </Link>                        
                         <h1>happy</h1>
                         <strong>Taboão da Serra</strong>
                         <span>São Paulo</span>
