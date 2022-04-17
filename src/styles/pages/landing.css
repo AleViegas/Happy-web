@@ -186,6 +186,8 @@
         transform: translate(-50%, -60%);
         width: fit-content;
         font-size: 30px;
+
+        display: block;
     }
 
     #page-landing .content-wrapper img {
