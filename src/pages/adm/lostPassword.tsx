@@ -38,7 +38,7 @@ export default function LostPassword() {
                         <label htmlFor="e-mail">E-mail</label>
                         <input type="email" name="" />
 
-                        <button>Entrar</button>
+                        <button>Recuperar a senha</button>
                     </form>
 
                 </aside>
